@@ -1,16 +1,11 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+print("Welcome to the tip calculator")
+total_bill= float(input("what was the total bill? $"))
+tip_per= float(input("what percentage tip would you like to give?  10'12 or 15?" ))
+people= int(input("how many people split the bill?"))
 
+total=total_bill+(total_bill*tip_per/100)
+each=round(total/people,2)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('Hello Pycharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(f"Each person shold pay ${each}")
